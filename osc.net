@@ -1,0 +1,18 @@
+* C:\Users\owenr\Desktop\paramp\osc.asc
+Q1 voutn voutp N001 0 2N2222
+Q2 voutp voutn N001 0 2N2222
+L1 voutp voutn {losc} Rser=1
+C1 voutp voutn {cosc}
+V1 vdd 0 1.5
+Q3 vdd voutp voutn 0 PNP
+Q4 vdd voutn voutp 0 PNP
+R1 N001 0 500
+.model NPN NPN
+.model PNP PNP
+.lib C:\Users\owenr\AppData\Local\LTspice\lib\cmp\standard.bjt
+.param losc = 200n
+.param cosc=20p
+.tran 0 {pfreq} {0.995*pfreq}
+.param pfreq=10K*sqrt(losc * cosc)
+.backanno
+.end

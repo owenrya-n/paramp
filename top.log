@@ -1,0 +1,7 @@
+WARNING: Can't resolve .param pump_freq=sqrt(x2:l1 * x2:c1)
+Questionable use of curly braces in ".tran {sqrt(x2:l1*x2*c1)}"
+    Error: undefined symbol in: "sqrt([x2:l1]*x2*c1)"
+LTspice 24.0.9 for Windows
+Circuit: * C:\Users\owenr\Desktop\paramp\top.asc
+Start Time: Sun Mar  2 18:04:11 2025
+WARNING: Can't resolve .param pump_freq=sqrt(x2:l1 * x2:c1)
